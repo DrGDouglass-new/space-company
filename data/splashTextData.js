@@ -101,10 +101,12 @@ var splashTextArray = ["Venturing Into The Unknown...",
 "Fat Free!",
 "0% Sugar!",
 "0% Organic!",
+"Happy Birthday!",
 "JavaScript!",
 "Recruiting Robot Hamsters...",
 "Autoclickers strictly discouraged!",
 "Even more in-depth than Kerbal Space Program!",
+"Welcome to Jurrasic Park...",
 "Effects of prolonged exposure to Space Company currently unknown...",
 ];
 var splashText = splashTextArray[Math.floor(Math.random()*splashTextArray.length)];
@@ -121,5 +123,8 @@ if(currentDate.indexOf("Sep 12") !== -1){
 }
 if(currentDate.indexOf("Dec 25") !== -1){
 	splashText = "Merry Christmas!";
+}
+if(currentDate.indexOf("Apr 01") !== -1){
+	splashText = "April Fools!";
 }
 document.getElementById("splashText").textContent = splashText;
